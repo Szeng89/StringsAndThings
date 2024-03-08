@@ -62,11 +62,18 @@ public class StringsAndThings {
      *           containsEqualNumberOfIsAndNot("noisxxnotyynotxisi") // Should return true
      */
     public Boolean containsEqualNumberOfIsAndNot(String input){
+        //counter for is and not's
         int isCount = 0;
         int notCount = 0;
+
+        //interate through the string
         for (int i = 0; i < input.length()-1; i++) {
+
+            // check to see if i's are followed by s's if so increase counter
             if (input.charAt(i) == 'i' && input.charAt(i+1) == 's'){
                 isCount++;
+
+                //check to see if n's are followed by o's and then t's if so raise counter then see if the count is equal
             } else if (input.charAt(i) == 'n' && input.charAt(i+1) == 'o' && input.charAt(i+2)== 't') {
                 notCount++;
             }
