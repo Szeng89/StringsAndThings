@@ -17,12 +17,20 @@ public class StringsAndThings {
     public Integer countYZ(String input){
         //Make array to split the string with " "
         String[] arr = input.split(" ");
+
+        //make a yCounter and a Zcounter
         int yCount = 0;
         int zCount = 0;
+
+        //iterate through the string
         for (int i = 0; i < arr.length; i++){
+
+            //check last char at index i is == to 'y' if it is add to yCount
             if (arr[i].charAt(arr[i].length()-1) =='y'){
                 yCount++;
             }else{
+
+                //check last char at index i is == to 'z' if it is add to yCount
                 if (arr[i].charAt(arr[i].length()-1) == 'z'){
                     zCount++;
                 }
