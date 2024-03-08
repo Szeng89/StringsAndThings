@@ -50,7 +50,10 @@ public class StringsAndThings {
      *           removeString("Hello there", "x") // Should return "Hello there"
      */
     public String removeString(String base, String remove){
-        return null;
+
+        //removing whatever is in string base with whatever is in string remove and replacing it with ""
+       String base2 = base.replace(remove, "");
+        return base2;
     }
 
     /**
